@@ -13,15 +13,15 @@ source:
     - qwtpolarconfig.pri.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - qt
+    - qt 4.*
     - qwt 
   run:
-    - qt
+    - qt 4.*
     - qwt
 
 test:
