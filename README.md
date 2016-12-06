@@ -11,6 +11,18 @@ Summary: Polar coordinate system plots for Qwt
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/qwtpolar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/qwtpolar-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/qwtpolar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/qwtpolar-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/qwtpolar/badges/version.svg)](https://anaconda.org/conda-forge/qwtpolar)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/qwtpolar/badges/downloads.svg)](https://anaconda.org/conda-forge/qwtpolar)
+
 Installing qwtpolar
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `qwtpolar` available on your platf
 ```
 conda search qwtpolar --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/qwtpolar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/qwtpolar-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/qwtpolar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/qwtpolar-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/qwtpolar/badges/version.svg)](https://anaconda.org/conda-forge/qwtpolar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/qwtpolar/badges/downloads.svg)](https://anaconda.org/conda-forge/qwtpolar)
 
 
 Updating qwtpolar-feedstock
