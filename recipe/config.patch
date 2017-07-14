@@ -1,0 +1,24 @@
+--- qwtpolarbuild.pri.orig	2017-07-13 16:50:29.823962000 +1000
++++ qwtpolarbuild.pri	2017-07-13 19:40:19.981033900 +1000
+@@ -21,20 +21,9 @@
+ # release/debug mode
+ ######################################################################
+ 
+-win32 {
+-    # On Windows you can't mix release and debug libraries.
+-    # The designer is built in release mode. If you like to use it
+-    # you need a release version. For your own application development you
+-    # might need a debug version. 
+-    # Enable debug_and_release + build_all if you want to build both.
+-
+-    CONFIG           += debug_and_release
+-    CONFIG           += build_all
+-}
+-else {
+ 
+     CONFIG           += release
+-
++unix {
+     VER_MAJ           = $${QWT_POLAR_VER_MAJ}
+     VER_MIN           = $${QWT_POLAR_VER_MIN}
+     VER_PAT           = $${QWT_POLAR_VER_PAT}

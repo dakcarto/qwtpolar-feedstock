@@ -11,23 +11,37 @@ source:
   patches:
     # Allow relocatable install
     - qwtpolarconfig.pri.patch
+    # don't build debug on Windows - fails as Qwt isn't debug
+    - config.patch  # [win]
 
 build:
-  number: 2
-  skip: true  # [win]
-
+  number: 3
+  features:
+    - vc9     # [win and py27]
+    - vc10    # [win and py34]
+    - vc14    # [win and py35]
+    
 requirements:
   build:
-    - qt 4.8.*
+    - qt 5.6.*
     - qwt 
+    - toolchain
+    - vc 9    # [win and py27]
+    - vc 10   # [win and py34]
+    - vc 14   # [win and py35]
   run:
-    - qt 4.8.*
+    - qt 5.6.*
     - qwt
+    - vc 9    # [win and py27]
+    - vc 10   # [win and py34]
+    - vc 14   # [win and py35]
 
 test:
   commands:
     - test -f ${PREFIX}/lib/libqwtpolar.so  # [linux]
     - test -f ${PREFIX}/lib/libqwtpolar.dylib  # [osx]
+    - if not exist %LIBRARY_BIN%\\qwtpolar.dll exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\\qwtpolar.lib exit 1  # [win]
 
 about:
   home: http://qwtpolar.sourceforge.net/ 
